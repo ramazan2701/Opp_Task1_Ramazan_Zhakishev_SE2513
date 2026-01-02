@@ -1,7 +1,7 @@
 import java.util.List;
 
 public class Main {
-    public static void main(String[] args) {
+    public static void main() {
         Person contactA = new SupplierContact(1, "John Smith", "john@supplier.com");
         Person contactB = new SupplierContact(2, "Aida N.", "aida@supplier.kz");
 
@@ -11,6 +11,8 @@ public class Main {
         Product p1 = new Product(1001, "SSD 1TB", "Electronics", 59.99);
         Product p2 = new Product(1002, "Keyboard", "Electronics", 19.50);
         Product p3 = new Product(1003, "Office Chair", "Furniture", 120.00);
+
+        //system.out()
 
         Inventory inventory = new Inventory();
         inventory.addItem(new InventoryItem(p1, supplierA, 12));
@@ -42,7 +44,6 @@ public class Main {
         for (InventoryItem item : inventory.getItems()) {
             System.out.println(item);
         }
-
         System.out.println("\n= equals/hashCode DEMO =");
         Product p1SameId = new Product(1001, "SSD 1TB NEW", "Electronics", 60.00);
         System.out.println("p1.equals(p1SameId): " + p1.equals(p1SameId));

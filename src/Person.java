@@ -10,7 +10,7 @@ public abstract class Person {
     public String getName() { return name; }
     public void setName(String name) { this.name = name; }
 
-    public abstract String getRole();
+    protected abstract String getRole();
 
     @Override
     public String toString() {

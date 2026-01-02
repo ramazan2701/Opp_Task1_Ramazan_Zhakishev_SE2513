@@ -1,4 +1,4 @@
-import java.util.Objects;
+//import java.util.Objects;
 
 public class Product {
     private final int productId;
@@ -28,16 +28,16 @@ public class Product {
     public String toString() {
         return "Product{id=" + productId + ", name='" + name + "', category='" + category + "', unitPrice=" + unitPrice + "}";
     }
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (!(o instanceof Product)) return false;
-        Product product = (Product) o;
-        return productId == product.productId;
-    }
+//    @Override
+//    public boolean equals(Object o) {
+//        if (this == o) return true;
+//        if (!(o instanceof Product)) return false;
+//        Product product = (Product) o;
+//        return productId == product.productId;
+//    }
 
-    @Override
-    public int hashCode() {
-        return Objects.hash(productId);
-    }
+//    @Override
+//    public int hashCode() {
+//        return Objects.hash(productId);
+//    }
 }
