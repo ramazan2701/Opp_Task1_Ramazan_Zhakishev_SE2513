@@ -2,7 +2,7 @@ import java.util.List;
 
 public class Main {
     public static void main() {
-        Person contactA = new SupplierContact(1, "John Smith", "john@supplier.com");
+        Person contactA = new SupplierContact(1, "John Smith", "john@supplier.com"); //person тут по сути не нужен его можно заменить оставь его пока не придумаешь ниччего лучше
         Person contactB = new SupplierContact(2, "Aida N.", "aida@supplier.kz");
 
         Supplier supplierA = new Supplier(101, "GlobalSupply", "USA", (SupplierContact) contactA);
