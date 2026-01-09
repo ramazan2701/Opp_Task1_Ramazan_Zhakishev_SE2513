@@ -1,7 +1,7 @@
 import java.util.List;
 
-public class Main {
-    public static void main() {
+ void main(){
+
         Person contactA = new SupplierContact(1, "John Smith", "john@supplier.com"); //person тут по сути е нужен его можно заменить оставь его пока не придумаешь ничего лучше
         Person contactB = new SupplierContact(2, "Aida N.", "aida@supplier.kz");
 
@@ -48,5 +48,5 @@ public class Main {
         Product p1SameId = new Product(1001, "SSD 1TB NEW", "Electronics", 60.00);
         System.out.println("p1.equals(p1SameId): " + p1.equals(p1SameId));
         System.out.println("hashCode equal: " + (p1.hashCode() == p1SameId.hashCode()));
-    }
+
 }
