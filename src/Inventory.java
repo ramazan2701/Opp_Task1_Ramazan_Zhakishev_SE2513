@@ -9,7 +9,6 @@ public class Inventory {
         this.items = new ArrayList<>();
     }
 
-
     public List<InventoryItem> getItems() {
         return new ArrayList<>(items);
     }
@@ -17,7 +16,6 @@ public class Inventory {
     public void addItem(InventoryItem item) {
         items.add(item);
     }
-
 
     public InventoryItem findByProductId(int productId) {
         for (InventoryItem item : items) {
@@ -39,8 +37,6 @@ public class Inventory {
         }
         return result;
     }
-
-
     public List<InventoryItem> filterLowStock(int thresholdExclusive) {
         List<InventoryItem> result = new ArrayList<>();
         for (InventoryItem item : items) {
@@ -50,8 +46,6 @@ public class Inventory {
         }
         return result;
     }
-
-
     public void sortByUnitPriceAscending() {
         items.sort(Comparator.comparingDouble(i -> i.getProduct().getUnitPrice()));
     }

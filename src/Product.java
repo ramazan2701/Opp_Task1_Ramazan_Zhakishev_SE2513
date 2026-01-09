@@ -28,16 +28,16 @@ public class Product {
     public String toString() {
         return "Product{id=" + productId + ", name='" + name + "', category='" + category + "', unitPrice=" + unitPrice + "}";
     }
-//    @Override
-//    public boolean equals(Object o) {
-//        if (this == o) return true;
-//        if (!(o instanceof Product)) return false;
-//        Product product = (Product) o;
-//        return productId == product.productId;
-//    }
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (!(o instanceof Product product)) return false; //ide предложила сделать так
 
-//    @Override
-//    public int hashCode() {
-//        return Objects.hash(productId);
-//    }
+        return productId == product.productId;
+    }
+
+    @Override
+    public int hashCode() {
+        return Integer.hashCode(productId);
+    }
 }

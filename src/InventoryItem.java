@@ -29,7 +29,7 @@ public class InventoryItem {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof InventoryItem that)) return false;
+        if (!(o instanceof InventoryItem that)) return false; // если передеасть null или он другого класса то выдаст false 
         return product.equals(that.product) && supplier.equals(that.supplier);
     }
 
