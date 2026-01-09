@@ -28,7 +28,7 @@ public class Inventory {
         return null;
     }
 
-    // Фильтрация по категории
+
     public List<InventoryItem> filterByCategory(String category) {
         List<InventoryItem> result = new ArrayList<>();
         for (InventoryItem item : items) {
@@ -40,7 +40,7 @@ public class Inventory {
         return result;
     }
 
-    // Фильтрация: остаток меньше порога
+
     public List<InventoryItem> filterLowStock(int thresholdExclusive) {
         List<InventoryItem> result = new ArrayList<>();
         for (InventoryItem item : items) {
@@ -51,7 +51,7 @@ public class Inventory {
         return result;
     }
 
-    // Сортировки
+
     public void sortByUnitPriceAscending() {
         items.sort(Comparator.comparingDouble(i -> i.getProduct().getUnitPrice()));
     }
