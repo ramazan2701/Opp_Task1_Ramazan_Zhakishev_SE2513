@@ -2,10 +2,10 @@ import java.util.List;
 
  void main(){
 
-        Person contactA = new SupplierContact(1, "John Smith", "john@supplier.com"); //person тут по сути е нужен его можно заменить оставь его пока не придумаешь ничего лучше
+        SupplierContact contactA = new SupplierContact(1, "John Smith", "john@supplier.com"); //person тут по сути е нужен его можно заменить оставь его пока не придумаешь ничего лучше
         Person contactB = new SupplierContact(2, "Aida N.", "aida@supplier.kz");
 
-        Supplier supplierA = new Supplier(101, "GlobalSupply", "USA", (SupplierContact) contactA);
+        Supplier supplierA = new Supplier(101, "GlobalSupply", "USA", contactA);
         Supplier supplierB = new Supplier(102, "KazSupply", "Kazakhstan", (SupplierContact) contactB);
 
         Product p1 = new Product(1001, "SSD 1TB", "Electronics", 59.99);
