@@ -1,6 +1,6 @@
 import java.util.List;
-
- void main(){
+import java.sql.*;
+public static void main(String[] args){
 
         SupplierContact contactA = new SupplierContact(1, "John Smith", "john@supplier.com"); //person тут по сути е нужен его можно заменить оставь его пока не придумаешь ничего лучше
         Person contactB = new SupplierContact(2, "Aida N.", "aida@supplier.kz");
